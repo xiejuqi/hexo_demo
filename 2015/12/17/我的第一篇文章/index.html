@@ -9,7 +9,14 @@
     
     <meta name="author" content="解巨琦">
     
-    <meta name="description" content="今天终于买到火车票了哦">
+    <meta name="description" content="今天终于买到火车票了哦
+一个人来到田纳西
+毫无疑问我做的馅饼是全天下最好吃的
+
+undefined
+『% codeblock [agc] [lang:java] [url] [link text] %』    System.out『% endcodeblock %』
+
+val s = “hello ">
     
     
     
@@ -72,8 +79,8 @@
       <a href="http://yoursite.com" title="解巨琦">解巨琦</a>
     </p>
   <p class="article-time">
-    <time datetime="2015-12-17T06:48:48.624Z" itemprop="datePublished">2015-12-17</time>
-    更新日期:<time datetime="2015-12-17T06:48:48.624Z" itemprop="dateModified">2015-12-17</time>
+    <time datetime="2015-12-17T09:56:46.254Z" itemprop="datePublished">2015-12-17</time>
+    更新日期:<time datetime="2015-12-17T09:56:46.254Z" itemprop="dateModified">2015-12-17</time>
     
   </p>
 </header>
@@ -86,6 +93,13 @@
 		</div>
 		
 		<p>今天终于买到火车票了哦</p>
+<p><strong>一个人来到田纳西</strong></p>
+<p><strong>毫无疑问</strong><br><em>我做的馅饼<br>是全天下</em><br><em>最好吃的</em></p>
+<hr>
+undefined
+<p>『% codeblock [agc] [lang:java] [url] [link text] %』<br>    System.out<br>『% endcodeblock %』</p>
+<hr>
+<p>val s = “hello Markdown”<br>println( s )</p>
   
 	</div>
 		<footer class="article-footer clearfix">
@@ -288,6 +302,27 @@ $(document).ready(function(){
 </script> 
 
 
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){ 
+  $('.article-content').each(function(i){
+    $(this).find('img').each(function(){
+      if ($(this).parent().hasClass('fancybox')) return;
+      var alt = this.alt;
+      if (alt) $(this).after('<span class="caption">' + alt + '</span>');
+      $(this).wrap('<a href="' + this.src + '" title="' + alt + '" class="fancybox"></a>');
+    });
+    $(this).find('.fancybox').each(function(){
+      $(this).attr('rel', 'article' + i);
+    });
+  });
+  if($.fancybox){
+    $('.fancybox').fancybox();
+  }
+}); 
+</script>
 
 
 
